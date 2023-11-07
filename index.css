@@ -1,3 +1,163 @@
+*, *::before, *::after {
+    box-sizing: border-box;    
+}
+
 body {
     margin: 0;
-} 
+    padding: 0;
+    font-family: Smythe;
+    min-width: 650px;
+    position: relative;
+}
+
+header {
+    display: flex;
+    color: #FFFFFF;
+    flex-direction: column;
+    position: relative;
+    user-select: none;
+}
+
+.h3-h4-div {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.header-h3 {
+    font-size: 1.75rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin: 1.75em 0 0 2em;
+}
+
+.header-h4 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 0 0 0 2.75em;
+}
+
+.product-div {
+    display: flex;
+    border-bottom: 2px solid #F2F2F2;
+    margin-top: 2em;
+    user-select: none;
+}
+
+.product-img {
+    width: 75px;
+    height: 75px;
+    margin: 0.25em 2em 0 3em;
+}
+
+h3, h5 {
+    margin: 0.3em 0 0.25em 0;
+}
+
+span {
+    font-size: 1rem;
+    color: #8B8B8B;
+    cursor: pointer;
+}
+
+.product-btn {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border: 2px solid #DEDEDE;
+    margin: 1em 4em 4em auto;
+    cursor: pointer;
+}
+
+#order-div {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+}
+/* WIP */
+#inner-order-style {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: auto;
+    width: 85%;
+}
+
+#inner-order-style span {
+    margin-right: 19em;
+    margin-left: 0.5em;
+}
+
+#total-price-div {
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 3px #393333;
+    max-width: 85%;
+    margin: auto;
+}
+
+#total-price-span {
+    font-size: 1.25rem;
+    margin-top: 0.75em;
+    color: #0E0E0E;
+}
+
+.complete-order-btn, .pay-btn {
+    background-color: #22DB9C;
+    color: #FFFFFF;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    width: 85%;
+    margin: 2em 0 2em 0;
+    padding: 0.75em;
+    align-self: center;
+}
+
+#card-details-form {
+    margin: auto;
+    width: 85%;
+}
+
+#card-details-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75em;
+}
+
+#form-div {
+    display: none;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 75%;
+    width: 75%;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 6px 2px #666;
+}
+
+form input{
+    padding: 0.75em;
+    width: 100%;
+}
+
+#card-details-form button {
+    width: 100%;
+}
+
+#customer-div {
+    display: none;
+    text-align: center;
+    background-color: #ECFDF5;
+    color: #065F46;
+    font-size: 1.5rem;
+    padding: 1em;
+    margin: 2em;
+}

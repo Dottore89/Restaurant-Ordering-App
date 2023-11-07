@@ -1,9 +1,47 @@
+<!doctype html>
 <html>
     <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-       <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
-	<script src="index.js"></script>
+        <header>
+            <img class="header-img" src="images/hamburger-background.png">
+            <div class="h3-h4-div">
+                <h3 class="header-h3">Jimmy's Diner</h3>
+                <h4 class="header-h4">The best burgers and pizzas in town.</h4>
+            </div>
+        </header>
+        <hero id="hero">
+            <!-- Three menu options HERE -->
+        </hero>
+        <div id="order-div">
+            <h2>Your order</h2>
+                <div id="inner-order-div">
+                <!-- Your order HERE -->
+                </div>
+            <h2 id="final-price"></h2>
+            <button data-order="complete order" class="complete-order-btn">Complete order</button>
+        </div>
+        <div id="form-div">
+            <form id="card-details-form">
+                <h2>Enter card details</h2>
+                <div id="card-details-div">
+                    <input id="form-name" type="text" placeholder="Enter your name" required>
+                    <input id="form-card" type="text" placeholder="Enter card number" required>
+                    <input id="form-cvv" type="password" placeholder="Enter CVV" required>
+                </div>
+                <button class="pay-btn" id="pay-btn" data-pay="pay-btn">Pay</button>
+            </form>
+        </div>
+        <div id="customer-div">
+            <!-- Customer phrase HERE -->
+        </div>
+        
+	<script src="index.js" type="module"></script>
     </body>
 </html>
 
